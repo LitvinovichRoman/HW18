@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		5A98DDCE2AA86BCD002A744C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDCD2AA86BCD002A744C /* AppDelegate.swift */; };
 		5A98DDD02AA86BCD002A744C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDCF2AA86BCD002A744C /* SceneDelegate.swift */; };
-		5A98DDD22AA86BCD002A744C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDD12AA86BCD002A744C /* ViewController.swift */; };
+		5A98DDD22AA86BCD002A744C /* ColorSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDD12AA86BCD002A744C /* ColorSettingsVC.swift */; };
 		5A98DDD52AA86BCD002A744C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A98DDD32AA86BCD002A744C /* Main.storyboard */; };
 		5A98DDD72AA86BD2002A744C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A98DDD62AA86BD2002A744C /* Assets.xcassets */; };
 		5A98DDDA2AA86BD2002A744C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A98DDD82AA86BD2002A744C /* LaunchScreen.storyboard */; };
-		5A98DDE52AA86CE9002A744C /* ChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDE42AA86CE9002A744C /* ChangeViewController.swift */; };
+		5A98DDE52AA86CE9002A744C /* ChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDE42AA86CE9002A744C /* ChangeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A98DDCA2AA86BCD002A744C /* HW17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A98DDCD2AA86BCD002A744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A98DDCF2AA86BCD002A744C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5A98DDD12AA86BCD002A744C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A98DDD12AA86BCD002A744C /* ColorSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSettingsVC.swift; sourceTree = "<group>"; };
 		5A98DDD42AA86BCD002A744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A98DDD62AA86BD2002A744C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A98DDD92AA86BD2002A744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A98DDDB2AA86BD2002A744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A98DDE42AA86CE9002A744C /* ChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeViewController.swift; sourceTree = "<group>"; };
+		5A98DDE42AA86CE9002A744C /* ChangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +79,8 @@
 		5A98DDE22AA86C1C002A744C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5A98DDD12AA86BCD002A744C /* ViewController.swift */,
-				5A98DDE42AA86CE9002A744C /* ChangeViewController.swift */,
+				5A98DDD12AA86BCD002A744C /* ColorSettingsVC.swift */,
+				5A98DDE42AA86CE9002A744C /* ChangeVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,9 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A98DDD22AA86BCD002A744C /* ViewController.swift in Sources */,
+				5A98DDD22AA86BCD002A744C /* ColorSettingsVC.swift in Sources */,
 				5A98DDCE2AA86BCD002A744C /* AppDelegate.swift in Sources */,
-				5A98DDE52AA86CE9002A744C /* ChangeViewController.swift in Sources */,
+				5A98DDE52AA86CE9002A744C /* ChangeVC.swift in Sources */,
 				5A98DDD02AA86BCD002A744C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

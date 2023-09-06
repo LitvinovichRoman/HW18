@@ -7,12 +7,21 @@
 
 import UIKit
 
-class ChangeViewController: UIViewController {
+class ChangeVC: UIViewController {
 
+    @IBOutlet weak var subView: UIView!
+    @IBOutlet weak var changeButton: UIButton!
+    private func setupUI(){
+        subView.layer.cornerRadius = subView.frame.size.height / 2
+        subView.layer.masksToBounds = true
+        
+        changeButton.layer.cornerRadius = changeButton.frame.size.height / 2
+        changeButton.layer.masksToBounds = true
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
     }
     
 
