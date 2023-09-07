@@ -7,26 +7,35 @@
 
 import UIKit
 
-class ChangeVC: UIViewController {
+
+protocol DataUpdateProtocol {
+    func onDataUpdate(data: UIColor, transparency: CGFloat)
+}
+
+final class ChangeVC: UIViewController {
     
 // Views
-    @IBOutlet weak var subView: UIView!
-    @IBOutlet var viewForPainting: UIView!
+    @IBOutlet private  weak var subView: UIView!
+    @IBOutlet  var viewForPainting: UIView!{ didSet { viewForPainting.backgroundColor = color } }
     
 // Buttons
-    @IBOutlet weak var changeButton: UIButton!
+    @IBOutlet private weak var changeButton: UIButton!
     
+    var color: UIColor?
+    var transparency: CGFloat?
+    var delegate: DataUpdateProtocol?
+    var complitionHandler: (() -> ())?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
-    
-    var closure: ((UIColor) -> Void)?
 
     @IBAction func changeButtonPressed(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let ColorSettingsVC = storyboard.instantiateViewController(withIdentifier: "ColorSettingsVC") as? ColorSettingsVC else { return }
         self.navigationController?.pushViewController(ColorSettingsVC, animated: true)
+        delegate?.onDataUpdate(data: viewForPainting.backgroundColor ?? .white, transparency: 1)
         }
 
     private func setupUI(){
@@ -37,4 +46,11 @@ class ChangeVC: UIViewController {
         changeButton.layer.masksToBounds = true
     }
 }
-    
+
+extension ChangeVC: DataUpdateProtocol {
+    func onDataUpdate(data: UIColor, transparency: CGFloat) {
+        viewForPainting.backgroundColor = data
+        viewForPainting.alpha = transparency
+    }
+}
+

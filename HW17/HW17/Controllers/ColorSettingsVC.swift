@@ -7,27 +7,32 @@
 
 import UIKit
 
-class ColorSettingsVC: UIViewController {
+
+
+final class ColorSettingsVC: UIViewController {
+   
+    
     // Views
-    @IBOutlet var subView: UIView!
-    @IBOutlet var testColorView: UIView!
+    @IBOutlet private var subView: UIView!
+    @IBOutlet private var testColorView: UIView!
 
     // Sliders
-    @IBOutlet var redSlider: UISlider!
-    @IBOutlet var greenSlider: UISlider!
-    @IBOutlet var blueSlider: UISlider!
-
+    @IBOutlet private var redSlider: UISlider!
+    @IBOutlet private var greenSlider: UISlider!
+    @IBOutlet private var blueSlider: UISlider!
+    @IBOutlet weak var opacitySlider: UISlider!
+    
     // Buttons
-    @IBOutlet var delegatButton: UIButton!
-    @IBOutlet var closureButton: UIButton!
+    @IBOutlet private var delegatButton: UIButton!
+    @IBOutlet private var closureButton: UIButton!
 
     // Text fields
-    @IBOutlet var redColorTF: UITextField!
-    @IBOutlet var greenColorTF: UITextField!
-    @IBOutlet var blueColorTF: UITextField!
-    @IBOutlet var hexColorValueTF: UITextField!
+    @IBOutlet private var redColorTF: UITextField!
+    @IBOutlet private var greenColorTF: UITextField!
+    @IBOutlet private var blueColorTF: UITextField!
+    @IBOutlet private var hexColorValueTF: UITextField!
 
-    var closure: ((UIColor) -> Void)?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,21 +74,29 @@ class ColorSettingsVC: UIViewController {
     @IBAction func opacitySliderAction(_ sender: UISlider) {
         let opacityValue = sender.value
         testColorView.alpha = CGFloat(opacityValue)
+        updateColor()
     }
 
     @IBAction func closureButtonAction(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let changeVC = storyboard.instantiateViewController(withIdentifier: "ChangeVC") as? ChangeVC else { return }
         self.navigationController?.pushViewController(changeVC, animated: true)
+        changeVC.color = testColorView.backgroundColor
+        changeVC.transparency = testColorView.alpha
+        changeVC.complitionHandler = { [weak self] in
+            self?.testColorView.alpha = changeVC.viewForPainting.alpha
         }
-    
+        changeVC.complitionHandler = { [weak self] in
+            self?.testColorView.backgroundColor = changeVC.viewForPainting.backgroundColor
+        }
+    }
 
-   
-    
-    
     @IBAction func delegatButtonAction(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let changeVC = storyboard.instantiateViewController(withIdentifier: "ChangeVC") as? ChangeVC else { return }
+        changeVC.color = testColorView.backgroundColor
+        changeVC.transparency = testColorView.alpha
+        
         self.navigationController?.pushViewController(changeVC, animated: true)
     }
 
@@ -114,7 +127,11 @@ class ColorSettingsVC: UIViewController {
     private func updateColor() {
         guard let hexString = hexColorValueTF.text else { return }
         let color = UIColor(hexString: hexString)
+        let transparency = CGFloat(opacitySlider.value)
         testColorView.backgroundColor = color
+        testColorView.alpha = transparency
     }
 }
+
+
 

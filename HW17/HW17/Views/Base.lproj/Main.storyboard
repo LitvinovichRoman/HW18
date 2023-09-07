@@ -33,7 +33,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf0-tP-57M">
                                                 <rect key="frame" x="220" y="0.0" width="113" height="34.333333333333336"/>
-                                                <color key="backgroundColor" red="0.27688279490000001" green="0.33186029550000001" blue="0.33898887249999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="paintbrush.fill" catalog="system"/>
@@ -99,7 +99,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SOy-l8-GFS">
                                                         <rect key="frame" x="0.0" y="20.333333333333343" width="283" height="34"/>
                                                         <subviews>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="150" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="22d-9v-a3V" userLabel="red slider">
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="22d-9v-a3V" userLabel="red slider">
                                                                 <rect key="frame" x="-2" y="0.0" width="217" height="35"/>
                                                                 <color key="tintColor" systemColor="systemGray4Color"/>
                                                                 <color key="minimumTrackTintColor" systemColor="systemGray3Color"/>
@@ -109,7 +109,7 @@
                                                                     <action selector="redSliderAction:" destination="BJ0-fg-2Rt" eventType="valueChanged" id="Nyf-x3-GBH"/>
                                                                 </connections>
                                                             </slider>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IAz-My-DHD">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IAz-My-DHD">
                                                                 <rect key="frame" x="233" y="0.0" width="50" height="34"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="cR9-Ph-Ynq"/>
@@ -133,7 +133,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tKr-Ww-cGO">
                                                         <rect key="frame" x="0.0" y="20.333333333333314" width="283" height="34"/>
                                                         <subviews>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="150" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="oh3-bJ-gf0" userLabel="blue slider">
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="oh3-bJ-gf0" userLabel="blue slider">
                                                                 <rect key="frame" x="-2" y="0.0" width="217" height="35"/>
                                                                 <color key="tintColor" systemColor="systemGray4Color"/>
                                                                 <color key="minimumTrackTintColor" systemColor="systemGray3Color"/>
@@ -143,7 +143,7 @@
                                                                     <action selector="blueSliderAction:" destination="BJ0-fg-2Rt" eventType="valueChanged" id="ySd-Li-efX"/>
                                                                 </connections>
                                                             </slider>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYu-Lc-iFU">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYu-Lc-iFU">
                                                                 <rect key="frame" x="233" y="0.0" width="50" height="34"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="eg5-Bk-IKw"/>
@@ -167,7 +167,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fAQ-hV-6Wc">
                                                         <rect key="frame" x="0.0" y="20.333333333333314" width="283" height="34"/>
                                                         <subviews>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="150" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="8FM-9x-SaF" userLabel="green slider">
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="8FM-9x-SaF" userLabel="green slider">
                                                                 <rect key="frame" x="-2" y="0.0" width="217" height="35"/>
                                                                 <color key="tintColor" systemColor="systemGray4Color"/>
                                                                 <color key="minimumTrackTintColor" systemColor="systemGray3Color"/>
@@ -177,7 +177,7 @@
                                                                     <action selector="greenSliderAction:" destination="BJ0-fg-2Rt" eventType="valueChanged" id="2LB-2Z-2gR"/>
                                                                 </connections>
                                                             </slider>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dj-hk-5PA">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dj-hk-5PA">
                                                                 <rect key="frame" x="233" y="0.0" width="50" height="34"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="zID-I7-ILP"/>
@@ -198,7 +198,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X3t-dE-6FI">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X3t-dE-6FI">
                                                         <rect key="frame" x="203" y="0.0" width="80" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="isP-lj-FUT"/>
@@ -217,7 +217,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HDk-PC-2L4" userLabel="opacity slider">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HDk-PC-2L4" userLabel="opacity slider">
                                                         <rect key="frame" x="-2" y="25.333333333333314" width="287" height="31"/>
                                                         <color key="tintColor" systemColor="systemGray4Color"/>
                                                         <color key="thumbTintColor" red="0.27688279490000001" green="0.33186029550000001" blue="0.33898887249999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -291,6 +291,7 @@
                         <outlet property="greenColorTF" destination="9dj-hk-5PA" id="3Wu-uh-TwL"/>
                         <outlet property="greenSlider" destination="8FM-9x-SaF" id="m1I-dp-0oF"/>
                         <outlet property="hexColorValueTF" destination="X3t-dE-6FI" id="m0G-3N-eyT"/>
+                        <outlet property="opacitySlider" destination="HDk-PC-2L4" id="oYe-8I-VH6"/>
                         <outlet property="redColorTF" destination="IAz-My-DHD" id="pQG-k4-s14"/>
                         <outlet property="redSlider" destination="22d-9v-a3V" id="nhX-Pq-idg"/>
                         <outlet property="subView" destination="79g-ky-tqN" id="fcn-Q9-IKa"/>
@@ -320,9 +321,12 @@
             <point key="canvasLocation" x="136.64122137404578" y="-17.605633802816904"/>
         </scene>
     </scenes>
-    <color key="tintColor" systemColor="systemGray4Color"/>
+    <color key="tintColor" systemColor="labelColor"/>
     <resources>
         <image name="paintbrush.fill" catalog="system" width="122" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -337,6 +341,9 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
