@@ -77,17 +77,17 @@ final class ColorSettingsVC: UIViewController {
         updateColor()
     }
 
-    @IBAction func closureButtonAction(_ sender: UIButton) {
+    @IBAction func closureButtonAction(_ sender: UIButton)  {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let changeVC = storyboard.instantiateViewController(withIdentifier: "ChangeVC") as? ChangeVC else { return }
-        self.navigationController?.pushViewController(changeVC, animated: true)
         changeVC.color = testColorView.backgroundColor
         changeVC.transparency = testColorView.alpha
-        changeVC.complitionHandler = { [weak self] in
-            self?.testColorView.alpha = changeVC.viewForPainting.alpha
-        }
+        
+        self.navigationController?.pushViewController(changeVC, animated: true)
+        
         changeVC.complitionHandler = { [weak self] in
             self?.testColorView.backgroundColor = changeVC.viewForPainting.backgroundColor
+            self?.testColorView.alpha = changeVC.transparency ?? 1
         }
     }
 

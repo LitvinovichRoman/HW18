@@ -14,9 +14,15 @@ protocol DataUpdateProtocol {
 
 final class ChangeVC: UIViewController {
     
-// Views
+// Views1
     @IBOutlet private  weak var subView: UIView!
-    @IBOutlet  var viewForPainting: UIView!{ didSet { viewForPainting.backgroundColor = color } }
+    @IBOutlet  var viewForPainting: UIView!{ didSet {
+        viewForPainting.backgroundColor = color
+        if let transparency = transparency {
+                    viewForPainting.alpha = transparency
+                }
+        }
+    }
     
 // Buttons
     @IBOutlet private weak var changeButton: UIButton!
