@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		5A98DDCE2AA86BCD002A744C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDCD2AA86BCD002A744C /* AppDelegate.swift */; };
 		5A98DDD02AA86BCD002A744C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDCF2AA86BCD002A744C /* SceneDelegate.swift */; };
-		5A98DDD22AA86BCD002A744C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDD12AA86BCD002A744C /* ViewController.swift */; };
+		5A98DDD22AA86BCD002A744C /* ColorSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDD12AA86BCD002A744C /* ColorSettingsVC.swift */; };
 		5A98DDD52AA86BCD002A744C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A98DDD32AA86BCD002A744C /* Main.storyboard */; };
 		5A98DDD72AA86BD2002A744C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A98DDD62AA86BD2002A744C /* Assets.xcassets */; };
 		5A98DDDA2AA86BD2002A744C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A98DDD82AA86BD2002A744C /* LaunchScreen.storyboard */; };
-		5A98DDE52AA86CE9002A744C /* ChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDE42AA86CE9002A744C /* ChangeViewController.swift */; };
+		5A98DDE52AA86CE9002A744C /* ChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDE42AA86CE9002A744C /* ChangeVC.swift */; };
+		5AE456CB2AA93261003EC157 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE456CA2AA93261003EC157 /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A98DDCA2AA86BCD002A744C /* HW17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A98DDCD2AA86BCD002A744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A98DDCF2AA86BCD002A744C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5A98DDD12AA86BCD002A744C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A98DDD12AA86BCD002A744C /* ColorSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSettingsVC.swift; sourceTree = "<group>"; };
 		5A98DDD42AA86BCD002A744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A98DDD62AA86BD2002A744C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A98DDD92AA86BD2002A744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A98DDDB2AA86BD2002A744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A98DDE42AA86CE9002A744C /* ChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeViewController.swift; sourceTree = "<group>"; };
+		5A98DDE42AA86CE9002A744C /* ChangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeVC.swift; sourceTree = "<group>"; };
+		5AE456CA2AA93261003EC157 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		5A98DDCC2AA86BCD002A744C /* HW17 */ = {
 			isa = PBXGroup;
 			children = (
+				5AE456C92AA93235003EC157 /* Extensions */,
 				5A98DDE12AA86BED002A744C /* Application */,
 				5A98DDE22AA86C1C002A744C /* Controllers */,
 				5A98DDE32AA86C31002A744C /* Views */,
@@ -79,8 +82,8 @@
 		5A98DDE22AA86C1C002A744C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5A98DDD12AA86BCD002A744C /* ViewController.swift */,
-				5A98DDE42AA86CE9002A744C /* ChangeViewController.swift */,
+				5A98DDD12AA86BCD002A744C /* ColorSettingsVC.swift */,
+				5A98DDE42AA86CE9002A744C /* ChangeVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -92,6 +95,14 @@
 				5A98DDD82AA86BD2002A744C /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5AE456C92AA93235003EC157 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5AE456CA2AA93261003EC157 /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A98DDD22AA86BCD002A744C /* ViewController.swift in Sources */,
+				5A98DDD22AA86BCD002A744C /* ColorSettingsVC.swift in Sources */,
 				5A98DDCE2AA86BCD002A744C /* AppDelegate.swift in Sources */,
-				5A98DDE52AA86CE9002A744C /* ChangeViewController.swift in Sources */,
+				5A98DDE52AA86CE9002A744C /* ChangeVC.swift in Sources */,
 				5A98DDD02AA86BCD002A744C /* SceneDelegate.swift in Sources */,
+				5AE456CB2AA93261003EC157 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,11 +325,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W2HCKKQTYD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HW17/Application/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Color palette";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -341,11 +355,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W2HCKKQTYD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HW17/Application/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Color palette";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
