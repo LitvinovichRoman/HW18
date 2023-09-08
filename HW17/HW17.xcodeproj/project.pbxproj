@@ -14,6 +14,9 @@
 		5A98DDD72AA86BD2002A744C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A98DDD62AA86BD2002A744C /* Assets.xcassets */; };
 		5A98DDDA2AA86BD2002A744C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A98DDD82AA86BD2002A744C /* LaunchScreen.storyboard */; };
 		5A98DDE52AA86CE9002A744C /* ChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98DDE42AA86CE9002A744C /* ChangeVC.swift */; };
+		5AB5441C2AABD48B0021E6E7 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5441B2AABD48B0021E6E7 /* UIButtonExtension.swift */; };
+		5AB5441E2AABD4A90021E6E7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5441D2AABD4A90021E6E7 /* UIViewExtension.swift */; };
+		5AB544202AABD4C30021E6E7 /* UITextFielExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB5441F2AABD4C30021E6E7 /* UITextFielExtension.swift */; };
 		5AE456CB2AA93261003EC157 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE456CA2AA93261003EC157 /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		5A98DDD92AA86BD2002A744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A98DDDB2AA86BD2002A744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A98DDE42AA86CE9002A744C /* ChangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeVC.swift; sourceTree = "<group>"; };
+		5AB5441B2AABD48B0021E6E7 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		5AB5441D2AABD4A90021E6E7 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		5AB5441F2AABD4C30021E6E7 /* UITextFielExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFielExtension.swift; sourceTree = "<group>"; };
 		5AE456CA2AA93261003EC157 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				5AE456CA2AA93261003EC157 /* UIColorExtensions.swift */,
+				5AB5441B2AABD48B0021E6E7 /* UIButtonExtension.swift */,
+				5AB5441D2AABD4A90021E6E7 /* UIViewExtension.swift */,
+				5AB5441F2AABD4C30021E6E7 /* UITextFielExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -180,7 +189,10 @@
 				5A98DDCE2AA86BCD002A744C /* AppDelegate.swift in Sources */,
 				5A98DDE52AA86CE9002A744C /* ChangeVC.swift in Sources */,
 				5A98DDD02AA86BCD002A744C /* SceneDelegate.swift in Sources */,
+				5AB544202AABD4C30021E6E7 /* UITextFielExtension.swift in Sources */,
+				5AB5441E2AABD4A90021E6E7 /* UIViewExtension.swift in Sources */,
 				5AE456CB2AA93261003EC157 /* UIColorExtensions.swift in Sources */,
+				5AB5441C2AABD48B0021E6E7 /* UIButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
