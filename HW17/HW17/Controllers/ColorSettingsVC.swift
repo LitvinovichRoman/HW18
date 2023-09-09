@@ -64,9 +64,9 @@ final class ColorSettingsVC: UIViewController {
         changeVC.color = testColorView.backgroundColor
         changeVC.transparency = testColorView.alpha
             
-        self.navigationController?.pushViewController(changeVC, animated: false)
+        self.navigationController?.pushViewController(changeVC, animated: true)
             
-        changeVC.complitionHandler = { [weak self] in
+        changeVC.complitionHandler = { [weak self] in      
             self?.testColorView.backgroundColor = changeVC.viewForPainting.backgroundColor
             self?.testColorView.alpha = changeVC.transparency ?? 1
         }
@@ -122,7 +122,8 @@ final class ColorSettingsVC: UIViewController {
         guard let changeVC = storyboard.instantiateViewController(withIdentifier: "ChangeVC") as? ChangeVC else { return }
         changeVC.color = testColorView.backgroundColor
         changeVC.transparency = testColorView.alpha
+     
 
-        self.navigationController?.pushViewController(changeVC, animated: false)
+        self.navigationController?.pushViewController(changeVC, animated: true)
     }
 }
